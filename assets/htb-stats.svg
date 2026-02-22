@@ -1,0 +1,77 @@
+<svg width="480" height="240" viewBox="0 0 480 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <rect width="480" height="240" rx="14" fill="#000000"/>
+  <rect width="480" height="240" rx="14" stroke="#2A0F0F" stroke-width="1.5"/>
+  <rect width="4" height="240" rx="2" fill="#FF7A45"/>
+
+  <defs>
+    <clipPath id="avatarClip"><circle cx="48" cy="28" r="18"/></clipPath>
+    
+    <filter id="edgeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feMorphology in="SourceGraphic" operator="dilate" radius="1.2" result="expanded"/>
+      <feGaussianBlur in="expanded" stdDeviation="1.5" result="blur"/>
+      <feComponentTransfer in="blur">
+        <feFuncA type="linear" slope="0">
+          <animate attributeName="slope" values="0; 4; 0" dur="1.8s" repeatCount="indefinite"/>
+        </feFuncA>
+      </feComponentTransfer>
+    </filter>
+
+    <linearGradient id="glow" x1="0" y1="0" x2="480" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#FF7A45" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#FF7A45" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FF7A45" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <image href="https://account.hackthebox.com/storage/users/d60954c2-1ab5-4a68-8148-8aa0f9dd8c78-avatar.png" x="30" y="10" width="36" height="36" clip-path="url(#avatarClip)"/>
+
+  <text x="80" y="23" font-size="15" font-weight="bold" fill="white" font-family="'Segoe UI', Arial, sans-serif">ThatYonko</text>
+  
+  <text x="80" y="38" font-size="14" fill="#FFD700" filter="url(#edgeGlow)">⚔️</text>
+  <text x="80" y="38" font-size="14" fill="#FF7A45">⚔️</text>
+  <text x="100" y="38" font-size="11" fill="#FF7A45" font-family="monospace">Hacker</text>
+  
+  <text x="460" y="35" text-anchor="end" font-size="9" fill="#4A1B1D" font-family="monospace">2026-02-22 18:58 UTC</text>
+
+  <line x1="20" y1="52" x2="460" y2="52" stroke="#2A0F0F" stroke-width="1"/>
+
+  <rect x="108" y="62" width="82" height="66" rx="8" fill="#0A0A0A" stroke="#2A0F0F" stroke-width="1"/>
+  <text x="149" y="79"  text-anchor="middle" font-size="8"  fill="#C48A6A" font-family="monospace">USER OWNS</text>
+  <text x="149" y="103" text-anchor="middle" font-size="21" fill="#AA0A0A" font-family="monospace" font-weight="bold">20</text>
+  <text x="149" y="118" text-anchor="middle" font-size="7"  fill="#4A1B1D" font-family="monospace">flags</text>
+
+  <rect x="210" y="62" width="82" height="66" rx="8" fill="#0A0A0A" stroke="#2A0F0F" stroke-width="1"/>
+  <text x="251" y="79"  text-anchor="middle" font-size="8"  fill="#C48A6A" font-family="monospace">ROOT OWNS</text>
+  <text x="251" y="103" text-anchor="middle" font-size="21" fill="#AA0A0A" font-family="monospace" font-weight="bold">20</text>
+  <text x="251" y="118" text-anchor="middle" font-size="7"  fill="#4A1B1D" font-family="monospace">shells</text>
+
+  <rect x="312" y="62" width="82" height="66" rx="8" fill="#0A0A0A" stroke="#2A0F0F" stroke-width="1"/>
+  <text x="353" y="79"  text-anchor="middle" font-size="8"  fill="#C48A6A" font-family="monospace">CHALLENGES</text>
+  <text x="353" y="103" text-anchor="middle" font-size="21" fill="#AA0A0A" font-family="monospace" font-weight="bold">20</text>
+  <text x="353" y="118" text-anchor="middle" font-size="7"  fill="#4A1B1D" font-family="monospace">solved</text>
+
+  <line x1="20" y1="140" x2="460" y2="140" stroke="#2A0F0F" stroke-width="1"/>
+
+  
+  <g>
+    <rect x="58" y="167" width="76" height="22" rx="4" fill="#FFD700" fill-opacity="0.1" stroke="#FFD700" stroke-width="1"/>
+    <text x="96" y="182" text-anchor="middle" font-size="9" fill="#FFD700" font-family="monospace" font-weight="bold">RANKED UP!</text>
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </g>
+
+  <rect x="148" y="150" width="82" height="58" rx="8" fill="#0A0A0A" stroke="#2A0F0F" stroke-width="1"/>
+  <text x="189" y="165" text-anchor="middle" font-size="8"  fill="#C48A6A" font-family="monospace">SEASON</text>
+  <image href="https://app.hackthebox.com/images/competitive/tier-icons-rewards/tier-silver.svg" x="152" y="170" width="18" height="18"/>
+  <text x="195" y="186" text-anchor="middle" font-size="16" fill="#AA0A0A" font-family="monospace" font-weight="bold">#1308</text>
+  <text x="189" y="200" text-anchor="middle" font-size="7"  fill="#4A1B1D" font-family="monospace">Silver</text>
+
+  <rect x="250" y="150" width="82" height="58" rx="8" fill="#0A0A0A" stroke="#2A0F0F" stroke-width="1"/>
+  <text x="291" y="165" text-anchor="middle" font-size="8"  fill="#FF7A45" font-family="monospace">GLOBAL</text>
+  <text x="291" y="186" text-anchor="middle" font-size="16" fill="#AA0A0A" font-family="monospace" font-weight="bold">#834</text>
+  <text x="291" y="200" text-anchor="middle" font-size="7"  fill="#4A1B1D" font-family="monospace">rank</text>
+
+  <line x1="20" y1="220" x2="460" y2="220" stroke="#2A0F0F" stroke-width="1"/>
+
+
+</svg>
