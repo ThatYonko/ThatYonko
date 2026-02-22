@@ -46,13 +46,12 @@ def update_thm():
     </linearGradient>
   </defs>
 
-  <rect width="327" height="84" rx="12" fill="#121212"/>
   <image href="{b64_bg}" width="327" height="84" preserveAspectRatio="xMidYMid slice"/>
   
   <circle cx="40" cy="42" r="32" fill="url(#avatarBorder)"/>
   <circle cx="40" cy="42" r="30" fill="#121212"/>
-  <image href="{b64_avatar}" x="10" y="12" width="60" height="60" clip-path="url(#avatarClip)"/>
 
+  <image href="{b64_avatar}" x="10" y="12" width="60" height="60" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatarClip)"/>
   <text x="82" y="28" font-family="Ubuntu, Arial, sans-serif" font-size="14" font-weight="500" fill="#f9f9fb">{name}</text>
   <text x="150" y="28" font-family="Ubuntu, Arial, sans-serif" font-size="12" font-weight="500" fill="#ffffff">{rank_title}</text>
 
