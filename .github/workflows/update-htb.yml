@@ -1,4 +1,4 @@
-name: Update HTB Stats
+name: Update HTB & Tryhackme badges
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-stats:
+  update-profile-stats:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -20,13 +20,18 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Run HTB Badge Updater
+      - name: Install Dependencies
+        run: pip install beautifulsoup4
+
+      - name: Run Update Scripts
         env:
           HTB_TOKEN: ${{ secrets.HTB_TOKEN }}
-        run: python update_htb.py
+        run: |
+          python update_htb.py
+          python update_thm.py
 
       - name: Commit and Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "auto: update HTB stats card"
-          file_pattern: "assets/htb-stats.svg assets/htb_state.json"
+          commit_message: "auto: update security stats cards"
+          file_pattern: "assets/htb-stats.svg assets/thm-stats.svg assets/htb_state.json"
