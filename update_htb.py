@@ -208,7 +208,7 @@ def generate_svg(s):
   <text x="80" y="38" font-size="14" fill="{rc}">⚔️</text>
   <text x="100" y="38" font-size="11" fill="{rc}" font-family="monospace">{safe(s["rank"])}</text>
   
-  <text x="460" y="35" text-anchor="end" font-size="9" fill="{small}" font-family="monospace">{s["updated"]}</text>
+  <text x="460" y="30" text-anchor="end" font-size="9" fill="{small}" font-family="monospace">{s["updated"]}</text>
 
   <line x1="20" y1="52" x2="460" y2="52" stroke="{stroke_dark}" stroke-width="1"/>
 
